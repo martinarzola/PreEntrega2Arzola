@@ -1,0 +1,13 @@
+/* Mixins */
+@mixin border-style2($border-width, $border-color) {
+    border: $border-width solid $border-color;
+  }
+  
+.logo-epico {
+    @include border-style2(0.2px, steelblue);
+}
+
+.imagen-lateral {
+    @include border-style2(2px, steelblue);
+}
+/* Fin Mixins */

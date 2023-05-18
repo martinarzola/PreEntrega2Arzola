@@ -1,0 +1,32 @@
+
+/* General */
+body {
+    background-image: url(../images/body/Background1.jpg);
+    background-size: cover;
+    .texto {
+        font-family: 'League Gothic', sans-serif;
+        color: antiquewhite;
+        h1 {
+            text-align: center;
+        }
+    }
+}
+
+p {
+    font-size: 25px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    position: absolute;
+    bottom: auto;
+    width: 100%;
+    .img3:hover {
+        transform: scale(1.25);
+        transition: all 0.2s;
+    }
+}
+
+
+/* Fin General */

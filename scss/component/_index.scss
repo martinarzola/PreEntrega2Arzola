@@ -1,0 +1,54 @@
+
+
+/* Index */
+.logo-epico {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+/* Fin Index */
+
+/* Index Responsive */
+.grid-inicio {
+    display: grid;
+    grid-template-columns: auto 750px auto;
+    grid-template-rows: 220px 500px 44px;
+    grid-gap: 20px;
+  }
+  
+  .logo-epico {
+    grid-column: 2/ 3;
+    text-align: center;
+  }
+  
+  .panoramica {
+    grid-column: 2 / 3;
+    text-align: center;
+  }
+  
+  .principal-banda {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .grid-inicio {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        .logo-epico {
+          max-width: auto;
+          max-height: auto;
+          margin-top: 20px;
+      }
+        .panoramica {
+          margin-top: 20px;
+    }
+    }
+  }
+
+/* Fin Index Responsive */  
+  
+  
+  
+ 

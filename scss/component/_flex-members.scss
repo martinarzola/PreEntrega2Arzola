@@ -1,0 +1,22 @@
+
+/* Flexbox - members.hmtl */
+.flex-container {
+    display: flex;
+    background: #8d8d8d;
+    padding: 20px;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.img2 {
+    overflow: hidden;
+}
+
+.img2:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+    border-radius: 20%;
+}
+/* Fin Flexbox - members.hmtl */

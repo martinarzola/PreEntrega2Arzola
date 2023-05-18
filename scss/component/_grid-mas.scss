@@ -1,0 +1,55 @@
+
+/* Grid - more.html */
+
+
+.grid-mas {
+    display: grid;
+    grid-template-areas: 
+    "p1 p1 p1"
+    "p2 p2 img-lat"
+    "p3 p3 img-lat"
+    "p4 p4 p4"
+    "p5 p5 p5"
+    "p6 p6 p6";
+}
+
+.parr1 {
+    grid-area: p1;
+}
+.parr2 {
+    grid-area: p2;
+}
+.imagen-lateral {
+    grid-area: img-lat;
+    max-width: 90%;
+}
+.parr3 {
+    grid-area: p3;
+}
+.parr4 {
+    grid-area: p4;
+}
+.parr5 {
+    grid-area: p5;
+}
+.parr6 {
+    grid-area: p6;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-mas {
+        display: grid;
+        grid-template-areas: 
+        "p1 p1 p1"
+        "p2 p2 img-lat"
+        "p3 p3 p3"
+        "p4 p4 p4"
+        "p5 p5 p5"
+        "p6 p6 p6";
+    }
+    .imagen-lateral {
+        grid-area: img-lat;
+        max-width: 90%;
+    }
+}
+/* Fin Grid - more.html */

@@ -1,0 +1,234 @@
+
+
+
+/* Index */
+.logo-epico {
+    text-align: center;
+}
+
+.panoramica {
+    text-align: center;
+}
+
+.principal-banda {
+    border: 3px solid white;
+}
+/* Fin Index */
+
+
+
+
+
+
+
+
+
+
+/* General */
+/* Navbar de Bootstrap */
+nav {  
+    background-color: #28374d;
+    border: 4px solid steelblue;
+}
+/* Navbar de Bootstrap */
+
+body {
+    background-image: url(images/body/Background1.jpg);
+    background-size: cover;
+}
+
+.texto {
+    font-family: 'League Gothic', sans-serif;
+    color: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-size: 25px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    position: absolute;
+    bottom: auto;
+    width: 100%;
+}
+/* Fin General */
+
+
+
+
+
+
+
+
+
+
+/* Inicio Ver Más */
+.más {
+    padding: 30px;
+}
+/* Fin Ver Más */
+
+
+
+
+
+
+
+
+
+
+/* Flexbox - members.hmtl */
+.flex-container {
+    display: flex;
+    border: 1px solid black;
+    background: #8d8d8d;
+    padding: 20px;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.img2 {
+    border: 2px solid black;
+}
+/* Fin Flexbox - members.hmtl */
+
+
+
+
+
+
+
+
+
+
+/* Grid - index.html */
+.grid-inicio {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+
+.logo-epico {
+    width: 100%;
+}
+
+
+/* Fin Grid - index.html*/
+
+
+
+
+
+
+
+
+
+
+/* Grid - albums.html */
+.grid-layout {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    background-image: url(images/body/Background1.jpg);
+    padding: 20px;
+    border: 4px solid white;
+}
+
+.img {
+    height: 250px;
+    width: 250px;
+    border: 2px solid black;
+    margin: 15px;
+    
+}
+
+@media screen and (max-width: 1368px){
+    h1 {
+        text-align: center;
+    }
+    
+    .grid-layout {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        justify-content: space-around;
+        width: 80%;
+        margin: 0 auto;
+        background-color: aliceblue;
+        padding: 20px;
+        border: 4px solid white;
+    }
+    
+    .img {
+        height: 250px;
+        width: 250px;
+        border: 2px solid black;
+        margin: 15px;
+        
+    }
+    
+}
+
+@media screen and (max-width: 1018px){
+    h1 {
+        text-align: center;
+    }
+    
+    .grid-layout {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        justify-content: space-around;
+        width: 80%;
+        margin: 0 auto;
+        background-color: aliceblue;
+        padding: 20px;
+        border: 4px solid white;
+    }
+    
+    .img {
+        height: 250px;
+        width: 250px;
+        border: 2px solid black;
+        margin: 15px;
+        
+    }
+}
+
+@media screen and (max-width: 668px){
+    h1 {
+        text-align: center;
+    }
+    
+    .grid-layout {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows:  auto auto auto auto auto auto auto auto auto auto auto auto;
+        justify-content: space-around;
+        width: 80%;
+        margin: 0 auto;
+        background-color: aliceblue;
+        padding: 20px;
+        border: 4px solid white;
+    }
+    
+    .img {
+        height: 250px;
+        width: 250px;
+        border: 2px solid black;
+        margin: 15px;
+        
+    }
+}
+/* Fin Grid - albums.html */

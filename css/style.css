@@ -1,0 +1,268 @@
+@charset "UTF-8";
+/* Index */
+.logo-epico {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+/* Fin Index */
+/* Index Responsive */
+.grid-inicio {
+  display: grid;
+  grid-template-columns: auto 750px auto;
+  grid-template-rows: 220px 500px 44px;
+  grid-gap: 20px;
+}
+
+.logo-epico {
+  grid-column: 2/3;
+  text-align: center;
+}
+
+.panoramica {
+  grid-column: 2/3;
+  text-align: center;
+}
+
+.principal-banda {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-inicio {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+  .grid-inicio .logo-epico {
+    max-width: auto;
+    max-height: auto;
+    margin-top: 20px;
+  }
+  .grid-inicio .panoramica {
+    margin-top: 20px;
+  }
+}
+/* Fin Index Responsive */
+/* Navbar de Bootstrap */
+nav {
+  background-color: #28374d;
+  border: 4px solid steelblue;
+}
+
+/* Navbar de Bootstrap */
+/* General */
+body {
+  background-image: url(../images/body/Background1.jpg);
+  background-size: cover;
+}
+body .texto {
+  font-family: "League Gothic", sans-serif;
+  color: antiquewhite;
+}
+body .texto h1 {
+  text-align: center;
+}
+
+p {
+  font-size: 25px;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+  position: absolute;
+  bottom: auto;
+  width: 100%;
+}
+footer .img3:hover {
+  transform: scale(1.25);
+  transition: all 0.2s;
+}
+
+/* Fin General */
+/* Flexbox - members.hmtl */
+.flex-container {
+  display: flex;
+  background: #8d8d8d;
+  padding: 20px;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.img2 {
+  overflow: hidden;
+}
+
+.img2:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+  border-radius: 20%;
+}
+
+/* Fin Flexbox - members.hmtl */
+/* Grid - albums.html */
+.grid-layout {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  background-image: url(../images/body/Background1.jpg);
+  padding: 20px;
+}
+
+.img {
+  height: 250px;
+  width: 250px;
+  margin: 15px;
+}
+
+.img:hover {
+  transform: scale(1.5);
+  transition: all 0.5s;
+}
+
+@media screen and (max-width: 1368px) {
+  h1 {
+    text-align: center;
+  }
+  .grid-layout {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    background-color: aliceblue;
+    padding: 20px;
+  }
+  .img {
+    height: 250px;
+    width: 250px;
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 1018px) {
+  h1 {
+    text-align: center;
+  }
+  .grid-layout {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    background-color: aliceblue;
+    padding: 20px;
+  }
+  .img {
+    height: 250px;
+    width: 250px;
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 668px) {
+  h1 {
+    text-align: center;
+  }
+  .grid-layout {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    background-color: aliceblue;
+    padding: 20px;
+  }
+  .img {
+    height: 250px;
+    width: 250px;
+    margin: 15px;
+  }
+}
+/* Fin Grid - albums.html */
+/* Inicio Ver Más */
+.más {
+  padding: 30px;
+}
+
+/* Fin Ver Más */
+/* Grid - more.html */
+.grid-mas {
+  display: grid;
+  grid-template-areas: "p1 p1 p1" "p2 p2 img-lat" "p3 p3 img-lat" "p4 p4 p4" "p5 p5 p5" "p6 p6 p6";
+}
+
+.parr1 {
+  grid-area: p1;
+}
+
+.parr2 {
+  grid-area: p2;
+}
+
+.imagen-lateral {
+  grid-area: img-lat;
+  max-width: 90%;
+}
+
+.parr3 {
+  grid-area: p3;
+}
+
+.parr4 {
+  grid-area: p4;
+}
+
+.parr5 {
+  grid-area: p5;
+}
+
+.parr6 {
+  grid-area: p6;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-mas {
+    display: grid;
+    grid-template-areas: "p1 p1 p1" "p2 p2 img-lat" "p3 p3 p3" "p4 p4 p4" "p5 p5 p5" "p6 p6 p6";
+  }
+  .imagen-lateral {
+    grid-area: img-lat;
+    max-width: 90%;
+  }
+}
+/* Fin Grid - more.html */
+/* Extends */
+.grid-layout, .principal-banda {
+  border: 4px solid white;
+}
+
+.img, .img2, .flex-container {
+  border: 2px solid black;
+}
+
+/* Sección Flexbox Miembros*/
+/* Fin Sección Flexbox Miembros*/
+/* Sección Grid Álbumes*/
+/* Fin Sección Grid Álbumes*/
+/* Fin Extends*/
+/* Mixins */
+.logo-epico {
+  border: 0.2px solid steelblue;
+}
+
+.imagen-lateral {
+  border: 2px solid steelblue;
+}
+
+/* Fin Mixins */
+
+/*# sourceMappingURL=style.css.map */

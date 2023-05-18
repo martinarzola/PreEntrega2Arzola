@@ -1,0 +1,32 @@
+/* Extends */
+%border-style1 {
+    border: 4px solid white;
+  }
+
+  .principal-banda {
+    @extend %border-style1;
+  }
+
+  .grid-layout {
+    @extend %border-style1;
+  }
+
+%border-style2 {
+  border: 2px solid black;
+}
+ /* Sección Flexbox Miembros*/
+  .flex-container {
+  @extend %border-style2;
+  }
+
+  .img2 {
+    @extend %border-style2;
+  }
+ /* Fin Sección Flexbox Miembros*/
+ /* Sección Grid Álbumes*/
+  .img {
+    @extend %border-style2;
+  }
+  /* Fin Sección Grid Álbumes*/
+
+/* Fin Extends*/
